@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import './index.css';
+import './app.css';
 import './styles.css';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 export default function ListingAd({ pic, title, address, description, psf_min, psf_max, project_type, year, ownership_type, subprice_label, availabilities_label, icon }) {
   const [showDescription, setShowDescription] = useState(false);
   const [anonymizeNumbers, setAnonymizeNumbers] = useState(true);
