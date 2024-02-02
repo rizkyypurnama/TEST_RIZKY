@@ -28,18 +28,18 @@ export default function ListingAd({ pic, title, address, description, psf_min, p
   return (
     <div className="App p-4">
       <div className='card shadow-2xl'>
-        <Carousel className='shadow-inner' showThumbs={false}>
+        <Carousel className='shadow-inner' showThumbs={false} showStatus={false}>
           <div>
-            <img src={pic} style={{ height: '272px', width: '544px' }} alt="Slide 1" />
+            <img src={pic} alt="Slide 1" />
           </div>
           <div>
-            <img src={pic} style={{ height: '272px', width: '544px' }} alt="Slide 2" />
+            <img src={pic} alt="Slide 2" />
           </div>
         </Carousel>
           <div className='wrapper flex flex-row p-4'>
               <div className='text-start flex flex-col'>
                 <div className='flex flex-row'>
-                  <img className='mt-2' style={{ width: 40, height: 40 }} src={icon} />
+                  <img className='mt-1' src={icon} />
                   <div className='flex flex-col ml-3 '>
                     <div className='avenir-demibold f-23 f-color2'>{title}</div>
                     <div className='avenir-regular f-14 f-color1'>{address}</div>
@@ -53,7 +53,7 @@ export default function ListingAd({ pic, title, address, description, psf_min, p
                </div>
               </div>   
             <div className=' col-2 text-end flex flex-col'>
-                <div className='avenir-demibold' style={{fontSize: '19px'}}>${psf_min} - ${psf_max} psf</div>
+                <div className='avenir-demibold f-19 f-color2'>${psf_min} - ${psf_max} psf</div>
                 <div className='avenir-regular f-14 f-color1 text-1'>{subprice_label}</div>
             </div>
           </div>

@@ -1,3 +1,56 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 548px;
+  margin: 0 auto;
+}
+
+
+.avenir-demibold {
+  font-family: 'avenir-demibold';
+}
+.avenir-bold {
+  font-family: 'avenir-bold';
+}
+.avenir-regular {
+  font-family: 'avenir-regular';
+}
+.avenir-medium {
+  font-family: 'avenir-medium';
+}
+
+.f-23 {
+  font-size: 23px;
+}
+.f-19 {
+  font-size: 19px;
+}
+.f-16 {
+  font-size: 16px;
+}
+.f-14 {
+  font-size: 14px;
+}
+
+.f-color1 {
+  color: #787D9C;
+}
+.f-color2 {
+  color: #1A2258;
+}
+.f-color3 {
+  color: #F2833E;
+}
+
+.col-1 {
+  width: 60%;
+}
+.col-2 {
+  width: 40%;
+}
