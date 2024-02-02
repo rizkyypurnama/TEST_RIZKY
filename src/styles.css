@@ -32,7 +32,7 @@
 
   .col-2 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 1rem;
     width: 100%;
     text-align: start;
@@ -41,6 +41,7 @@
   .text-1 {
     padding-left: 0;
     padding-top: 6px;
+    padding-left: 18px;
   }
 
   .App {
@@ -62,14 +63,4 @@
   .f-14 {
     font-size: 13px;
   }
-}
-
-/* Tablet styles */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-
-}
-
-/* Desktop styles */
-@media only screen and (min-width: 1024px) {
-
 }
