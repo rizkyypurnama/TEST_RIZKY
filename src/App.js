@@ -31,10 +31,10 @@ export default function ListingAd({ pic, title, address, description, psf_min, p
       <div className='card shadow-2xl'>
         <Carousel className='shadow-inner' showThumbs={false}>
           <div>
-            <img src={pic} style={{ height: '272px', width: '544px' }} alt="Slide 1" />
+            <img className='w-full h-full' src={pic}  alt="Slide 1" />
           </div>
           <div>
-            <img src={pic} style={{ height: '272px', width: '544px' }} alt="Slide 2" />
+            <img className='w-full h-full 'src={pic}  alt="Slide 2" />
           </div>
         </Carousel>
           <div className='wrapper flex flex-row p-4'>
@@ -59,17 +59,17 @@ export default function ListingAd({ pic, title, address, description, psf_min, p
             </div>
           </div>
           <div className='pb-4 pr-4 pl-4 text-end avenir-demibold f-16 f-color3' >
-          <button 
-              className='focus:outline-none
-                        hover:text-orange-300'
-              onClick={handleSeeDescriptionClick}
->            See description
-            </button>
-            {showDescription && (
-              <div>
-                {getDescriptionContent()}
-              </div>
-            )}
+            <button 
+                className='focus:outline-none
+                          hover:text-orange-300'
+                onClick={handleSeeDescriptionClick}>
+                     See description
+              </button>
+              {showDescription && (
+                <div>
+                  {getDescriptionContent()}
+                </div>
+              )}
           </div>
         </div>
       </div>
