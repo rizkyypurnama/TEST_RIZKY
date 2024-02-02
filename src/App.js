@@ -29,7 +29,7 @@ export default function ListingAd({ pic, title, address, description, psf_min, p
   return (
     <div className="App p-4">
       <div className='card shadow-2xl'>
-        <Carousel className='shadow-inner' showThumbs={false}>
+        <Carousel className='carousel-inner' showThumbs={false} showStatus={false} >
           <div>
             <img className='w-full h-full' src={pic}  alt="Slide 1" />
           </div>
@@ -54,7 +54,7 @@ export default function ListingAd({ pic, title, address, description, psf_min, p
                </div>
               </div>   
             <div className=' col-2 text-end flex flex-col'>
-                <div className='avenir-demibold' style={{fontSize: '19px'}}>${psf_min} - ${psf_max} psf</div>
+                <div className='avenir-demibold f-color2' style={{fontSize: '19px'}}>${psf_min} - ${psf_max} psf</div>
                 <div className='avenir-regular f-14 f-color1 text-1'>{subprice_label}</div>
             </div>
           </div>
