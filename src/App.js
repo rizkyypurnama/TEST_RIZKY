@@ -3,6 +3,7 @@ import './app.css';
 import './styles.css';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 export default function ListingAd({ pic, title, address, description, psf_min, psf_max, project_type, year, ownership_type, subprice_label, availabilities_label, icon }) {
   const [showDescription, setShowDescription] = useState(false);
   const [anonymizeNumbers, setAnonymizeNumbers] = useState(true);
@@ -58,11 +59,11 @@ export default function ListingAd({ pic, title, address, description, psf_min, p
             </div>
           </div>
           <div className='pb-4 pr-4 pl-4 text-end avenir-demibold f-16 f-color3' >
-          <button 
-              className='focus:outline-none
-                        hover:text-orange-300'
+          <button
+              className='focus:outline-none hover:text-orange-300'
               onClick={handleSeeDescriptionClick}
->            See description
+            >
+              {showDescription ? 'Hide description' : 'See description'}
             </button>
             {showDescription && (
               <div>
